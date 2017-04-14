@@ -1,0 +1,8 @@
+四月 14, 2017 9:28:03 上午 org.apache.karaf.main.Main launch
+信息: Installing and starting initial bundles
+四月 14, 2017 9:28:07 上午 org.apache.karaf.main.Main launch
+信息: All initial bundles installed and set to start
+四月 14, 2017 9:28:07 上午 org.sonatype.nexus.karaf.NexusMain launch
+信息: ...launched Nexus!
+四月 14, 2017 9:28:08 上午 org.apache.karaf.main.Main$KarafLockCallback lockAquired
+信息: Lock acquired. Setting startlevel to 100
