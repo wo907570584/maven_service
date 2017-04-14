@@ -373,12 +373,12 @@ NX.direct.api.REMOTING_API = {
         formHandler: false
       },
       {
-        name: 'updateAccount',
+        name: 'updateRoleMappings',
         len: 1,
         formHandler: false
       },
       {
-        name: 'updateRoleMappings',
+        name: 'updateAccount',
         len: 1,
         formHandler: false
       },
@@ -704,13 +704,13 @@ NX.direct.api.REMOTING_API = {
     ],
     coreui_Repository: [
       {
-        name: 'readReferencesAddingEntriesForAllFormats',
-        len: 1,
+        name: 'getBrowseableFormats',
+        len: 0,
         formHandler: false
       },
       {
-        name: 'getBrowseableFormats',
-        len: 0,
+        name: 'readReferencesAddingEntriesForAllFormats',
+        len: 1,
         formHandler: false
       },
       {

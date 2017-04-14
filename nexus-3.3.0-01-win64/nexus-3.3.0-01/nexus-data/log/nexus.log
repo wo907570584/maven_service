@@ -319,3 +319,621 @@ Started Sonatype Nexus OSS 3.3.0-01
 2017-04-14 11:30:00,084+0800 INFO  [quartz-1-thread-13] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
 2017-04-14 11:36:18,378+0800 INFO  [SessionValidationThread-1] *UNKNOWN org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Validating all active sessions...
 2017-04-14 11:36:18,379+0800 INFO  [SessionValidationThread-1] *UNKNOWN org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+2017-04-14 13:44:20,018+0800 WARN  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4JInitialiser - Your logging framework class org.ops4j.pax.logging.slf4j.Slf4jLogger is not known - if it needs access to the standard println methods on the console you will need to register it by calling registerLoggingSystemPackage
+2017-04-14 13:44:20,041+0800 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Package org.ops4j.pax.logging.slf4j registered; all classes within it or subpackages of it will be allowed to print to System.out and System.err
+2017-04-14 13:44:20,065+0800 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+2017-04-14 13:44:20,071+0800 INFO  [FelixStartLevel] *SYSTEM uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J - Redirected System.out and System.err to SLF4J for this context
+2017-04-14 13:44:20,087+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder - Properties:
+2017-04-14 13:44:20,088+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-host='0.0.0.0'
+2017-04-14 13:44:20,089+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   application-port='8081'
+2017-04-14 13:44:20,090+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   fabric.etc='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/fabric'
+2017-04-14 13:44:20,091+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   jetty.etc='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/jetty'
+2017-04-14 13:44:20,092+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.base='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01'
+2017-04-14 13:44:20,093+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.data='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data'
+2017-04-14 13:44:20,094+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.etc='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\etc\karaf'
+2017-04-14 13:44:20,094+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.home='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01'
+2017-04-14 13:44:20,095+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   karaf.instances='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data\instances'
+2017-04-14 13:44:20,096+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   logback.etc='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\etc\logback'
+2017-04-14 13:44:20,096+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-args='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/jetty/jetty.xml,E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/jetty/jetty-http.xml,E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/jetty/jetty-requestlog.xml'
+2017-04-14 13:44:20,097+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-context-path='/'
+2017-04-14 13:44:20,098+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-edition='nexus-pro-edition'
+2017-04-14 13:44:20,098+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   nexus-features='nexus-pro-feature'
+2017-04-14 13:44:20,099+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.ConfigurationBuilder -   ssl.etc='E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01/etc/ssl'
+2017-04-14 13:44:20,100+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - Java: 1.8.0_102, Java HotSpot(TM) 64-Bit Server VM, Oracle Corporation, 25.102-b14
+2017-04-14 13:44:20,101+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - OS: Windows 7, 6.1, amd64
+2017-04-14 13:44:20,101+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - User: yemin02729, zh, C:\Users\yemin02729
+2017-04-14 13:44:20,102+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - CWD: E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01
+2017-04-14 13:44:20,141+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.Launcher - TMP: E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data\nexus\tmp
+2017-04-14 13:44:20,160+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2017-04-14 13:44:20,232+0800 INFO  [FelixStartLevel] *SYSTEM org.eclipse.jetty.util.log - Logging initialized @18726ms
+2017-04-14 13:44:20,247+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/jetty/jetty.xml
+2017-04-14 13:44:20,445+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/jetty/jetty-http.xml
+2017-04-14 13:44:20,560+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/jetty/jetty-requestlog.xml
+2017-04-14 13:44:20,598+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: org.eclipse.jetty.server.Server@39e670d5
+2017-04-14 13:44:20,605+0800 INFO  [jetty-main-1] *SYSTEM org.eclipse.jetty.server.Server - jetty-9.3.7.v20160115
+2017-04-14 13:44:20,793+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Initializing
+2017-04-14 13:44:20,794+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Loading OSS Edition
+2017-04-14 13:44:20,796+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Installing: nexus-oss-edition/3.3.0.01
+2017-04-14 13:44:27,993+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Installed: nexus-oss-edition/3.3.0.01
+2017-04-14 13:44:32,473+0800 INFO  [jetty-main-1] *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2017-04-14 13:44:32,473+0800 INFO  [jetty-main-1] *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID
+2017-04-14 13:44:32,516+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.apache.tika.core [113]
+2017-04-14 13:44:32,721+0800 INFO  [jetty-main-1] *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+2017-04-14 13:44:32,897+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.apache.tika.core [113]
+2017-04-14 13:44:32,899+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.common [135]
+2017-04-14 13:44:32,938+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.common [135]
+2017-04-14 13:44:32,939+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.hibernate.validator [120]
+2017-04-14 13:44:32,984+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.hibernate.validator [120]
+2017-04-14 13:44:32,989+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.commands [134]
+2017-04-14 13:44:33,030+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.commands [134]
+2017-04-14 13:44:33,031+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.crypto [136]
+2017-04-14 13:44:33,197+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.crypto [136]
+2017-04-14 13:44:33,198+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.jmx [143]
+2017-04-14 13:44:33,267+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.jmx [143]
+2017-04-14 13:44:33,272+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.orient [145]
+2017-04-14 13:44:33,444+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.orient [145]
+2017-04-14 13:44:33,446+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.security [152]
+2017-04-14 13:44:33,702+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.security [152]
+2017-04-14 13:44:33,708+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.base [129]
+2017-04-14 13:44:34,099+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2017-04-14 13:44:39,850+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.base [129]
+2017-04-14 13:44:39,888+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.blobstore-file [131]
+2017-04-14 13:44:39,964+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.blobstore-file [131]
+2017-04-14 13:44:39,973+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.cache [132]
+2017-04-14 13:44:40,009+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.cache [132]
+2017-04-14 13:44:40,014+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.capability [133]
+2017-04-14 13:44:40,061+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.capability [133]
+2017-04-14 13:44:40,066+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.email [137]
+2017-04-14 13:44:40,097+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.email [137]
+2017-04-14 13:44:40,116+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.extdirect [138]
+2017-04-14 13:44:40,262+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.extdirect [138]
+2017-04-14 13:44:40,269+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.httpclient [142]
+2017-04-14 13:44:40,312+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.httpclient [142]
+2017-04-14 13:44:40,313+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.oss-edition [146]
+2017-04-14 13:44:40,356+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.oss-edition [146]
+2017-04-14 13:44:40,384+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.rapture [148]
+2017-04-14 13:44:40,668+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.rapture [148]
+2017-04-14 13:44:40,899+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.rest-jackson2 [150]
+2017-04-14 13:44:40,955+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.rest-jackson2 [150]
+2017-04-14 13:44:40,995+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.scheduling [151]
+2017-04-14 13:44:41,073+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.scheduling [151]
+2017-04-14 13:44:41,092+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.siesta [154]
+2017-04-14 13:44:41,249+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.siesta [154]
+2017-04-14 13:44:41,277+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.swagger [157]
+2017-04-14 13:44:41,350+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.swagger [157]
+2017-04-14 13:44:41,520+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.upgrade [160]
+2017-04-14 13:44:41,627+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.upgrade [160]
+2017-04-14 13:44:41,645+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start LOGGING
+2017-04-14 13:44:41,657+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.log.LogbackLoggerOverrides - File: E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data\etc\logback\logback-overrides.xml
+2017-04-14 13:44:41,668+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.log.LogbackLogManager - Configuring
+2017-04-14 13:44:41,695+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusContextListener - Installing: [nexus-oss-feature/3.3.0.01]
+2017-04-14 13:44:46,393+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.elasticsearch [195]
+2017-04-14 13:44:46,451+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.elasticsearch [195]
+2017-04-14 13:44:46,453+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.selector [206]
+2017-04-14 13:44:46,490+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.selector [206]
+2017-04-14 13:44:46,496+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.repository [204]
+2017-04-14 13:44:47,159+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.repository [204]
+2017-04-14 13:44:47,517+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-coreui-plugin [197]
+2017-04-14 13:44:48,655+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.extender.NexusContextListener - Installed: [nexus-oss-feature/3.3.0.01]
+2017-04-14 13:44:49,303+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-coreui-plugin [197]
+2017-04-14 13:44:49,305+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.quartz [203]
+2017-04-14 13:44:49,421+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.quartz [203]
+2017-04-14 13:44:49,428+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-ssl-plugin [202]
+2017-04-14 13:44:49,509+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-ssl-plugin [202]
+2017-04-14 13:44:49,514+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.core [194]
+2017-04-14 13:44:49,862+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.core [194]
+2017-04-14 13:44:49,877+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-maven [199]
+2017-04-14 13:44:50,107+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-maven [199]
+2017-04-14 13:44:50,109+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-script-plugin [201]
+2017-04-14 13:44:50,179+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-script-plugin [201]
+2017-04-14 13:44:50,183+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-audit-plugin [196]
+2017-04-14 13:44:50,268+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-audit-plugin [196]
+2017-04-14 13:44:50,271+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-raw [200]
+2017-04-14 13:44:50,348+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-raw [200]
+2017-04-14 13:44:50,349+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.plugins.nexus-repository-httpbridge [198]
+2017-04-14 13:44:50,404+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.plugins.nexus-repository-httpbridge [198]
+2017-04-14 13:44:50,411+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_licensing_license-bundle_1.4.3_license-bundle-1.4.3.jar [244]
+2017-04-14 13:44:50,519+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_licensing_license-bundle_1.4.3_license-bundle-1.4.3.jar [244]
+2017-04-14 13:44:50,521+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.licensing-extension [215]
+2017-04-14 13:44:50,580+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.licensing-extension [215]
+2017-04-14 13:44:50,589+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_insight_scan_insight-scanner-model-io_2.4.5-01_insight-scanner-model-io-2.4.5-01.jar [242]
+2017-04-14 13:44:50,629+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_insight_scan_insight-scanner-model-io_2.4.5-01_insight-scanner-model-io-2.4.5-01.jar [242]
+2017-04-14 13:44:50,631+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_insight_scan_insight-scanner-core_2.4.5-01_insight-scanner-core-2.4.5-01.jar [241]
+2017-04-14 13:44:50,666+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED wrap_file__E__yeminproject_Repositories_github_repositories_maven_service_nexus-3.3.0-01-win64_nexus-3.3.0-01_system_com_sonatype_insight_scan_insight-scanner-core_2.4.5-01_insight-scanner-core-2.4.5-01.jar [241]
+2017-04-14 13:44:50,668+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-healthcheck-base [218]
+2017-04-14 13:44:50,801+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-healthcheck-base [218]
+2017-04-14 13:44:50,804+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-ahc-plugin [216]
+2017-04-14 13:44:50,866+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-ahc-plugin [216]
+2017-04-14 13:44:50,868+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING org.sonatype.nexus.rest-client [239]
+2017-04-14 13:44:50,899+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED org.sonatype.nexus.rest-client [239]
+2017-04-14 13:44:50,900+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-analytics-plugin [217]
+2017-04-14 13:44:51,003+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-analytics-plugin [217]
+2017-04-14 13:44:51,005+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-healthcheck-oss-plugin [219]
+2017-04-14 13:44:51,037+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-healthcheck-oss-plugin [219]
+2017-04-14 13:44:51,039+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-ldap-plugin [220]
+2017-04-14 13:44:51,173+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-ldap-plugin [220]
+2017-04-14 13:44:51,175+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-licensing-plugin [221]
+2017-04-14 13:44:51,333+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-licensing-plugin [221]
+2017-04-14 13:44:51,336+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-nuget [230]
+2017-04-14 13:44:51,459+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-nuget [230]
+2017-04-14 13:44:51,461+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-rubygems [232]
+2017-04-14 13:44:51,543+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-rubygems [232]
+2017-04-14 13:44:51,544+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-migration-plugin [222]
+2017-04-14 13:44:51,908+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-migration-plugin [222]
+2017-04-14 13:44:51,912+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-outreach-plugin [223]
+2017-04-14 13:44:51,973+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-outreach-plugin [223]
+2017-04-14 13:44:51,974+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-proui-plugin [224]
+2017-04-14 13:44:52,008+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-proui-plugin [224]
+2017-04-14 13:44:52,009+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-proximanova-plugin [225]
+2017-04-14 13:44:52,036+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-proximanova-plugin [225]
+2017-04-14 13:44:52,040+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-bower [226]
+2017-04-14 13:44:52,117+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-bower [226]
+2017-04-14 13:44:52,119+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-docker [227]
+2017-04-14 13:44:52,389+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-docker [227]
+2017-04-14 13:44:52,391+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-gitlfs [228]
+2017-04-14 13:44:52,463+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-gitlfs [228]
+2017-04-14 13:44:52,464+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-npm [229]
+2017-04-14 13:44:52,584+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-npm [229]
+2017-04-14 13:44:52,585+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-repository-pypi [231]
+2017-04-14 13:44:52,667+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-repository-pypi [231]
+2017-04-14 13:44:52,669+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATING com.sonatype.nexus.plugins.nexus-rutauth-plugin [233]
+2017-04-14 13:44:52,705+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusBundleTracker - ACTIVATED com.sonatype.nexus.plugins.nexus-rutauth-plugin [233]
+2017-04-14 13:44:52,709+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start STORAGE
+2017-04-14 13:44:52,779+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.internal.node.LocalNodeAccess - ID: 7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0
+2017-04-14 13:44:52,789+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.internal.orient.DatabaseServerImpl - OrientDB version: 2.2.18 (build 3e8d46e73aa087fce245fa1125ab7d984a247f6e)
+2017-04-14 13:44:52,813+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.OServer - OrientDB Server v2.2.18 (build 3e8d46e73aa087fce245fa1125ab7d984a247f6e) is starting up...
+2017-04-14 13:44:52,823+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.OServer - Databases directory: E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data\db
+2017-04-14 13:44:53,233+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.engine.OMemoryAndLocalPaginatedEnginesInitializer - OrientDB auto-config DISKCACHE=2,048MB (heap=1,162MB direct=2,048MB os=8,096MB)
+2017-04-14 13:44:53,348+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.OServer - Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password
+2017-04-14 13:44:53,627+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.handler.OJMXPlugin - JMX plugin installed and active: profilerManaged=true
+2017-04-14 13:44:53,633+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.OServer - OrientDB Studio available at $ANSI{blue http://localhost:2480/studio/index.html}
+2017-04-14 13:44:53,635+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.server.OServer - $ANSI{green:italic OrientDB Server is active} v2.2.18 (build 3e8d46e73aa087fce245fa1125ab7d984a247f6e).
+2017-04-14 13:44:53,639+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.internal.orient.DatabaseServerImpl - Activated
+2017-04-14 13:44:53,657+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start UPGRADE
+2017-04-14 13:44:54,032+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Storage 'config' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:44:54,039+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Looking for last checkpoint...
+2017-04-14 13:44:54,047+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Found FUZZY checkpoint.
+2017-04-14 13:44:54,063+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:44:54,073+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=4725444}} will be skipped during data restore
+2017-04-14 13:44:54,092+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} 1 operations were processed, current LSN is LSN{segment=0, position=4725444} last LSN is LSN{segment=0, position=4725497}
+2017-04-14 13:44:54,096+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=4725451}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=4725404}} will be skipped during data restore
+2017-04-14 13:44:54,102+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=4725491}} will be skipped during data restore
+2017-04-14 13:44:54,115+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=config}} Storage data recover was completed
+2017-04-14 13:44:56,824+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start SCHEMAS
+2017-04-14 13:44:56,903+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Storage 'accesslog' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:44:56,906+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Looking for last checkpoint...
+2017-04-14 13:44:56,912+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Found FUZZY checkpoint.
+2017-04-14 13:44:56,913+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:44:56,920+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=586678}} will be skipped during data restore
+2017-04-14 13:44:56,922+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} 1 operations were processed, current LSN is LSN{segment=0, position=586678} last LSN is LSN{segment=0, position=586731}
+2017-04-14 13:44:56,929+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=586685}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=586638}} will be skipped during data restore
+2017-04-14 13:44:56,931+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=586725}} will be skipped during data restore
+2017-04-14 13:44:56,938+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=accesslog}} Storage data recover was completed
+2017-04-14 13:44:57,985+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Storage 'analytics' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:44:57,986+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Looking for last checkpoint...
+2017-04-14 13:44:57,990+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Found FUZZY checkpoint.
+2017-04-14 13:44:57,996+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:44:58,000+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=518177}} will be skipped during data restore
+2017-04-14 13:44:58,003+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} 1 operations were processed, current LSN is LSN{segment=0, position=518177} last LSN is LSN{segment=0, position=518230}
+2017-04-14 13:44:58,008+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=518184}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=518137}} will be skipped during data restore
+2017-04-14 13:44:58,010+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=518224}} will be skipped during data restore
+2017-04-14 13:44:58,019+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=analytics}} Storage data recover was completed
+2017-04-14 13:44:59,055+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Storage 'component' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:44:59,055+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Looking for last checkpoint...
+2017-04-14 13:44:59,059+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Found FUZZY checkpoint.
+2017-04-14 13:44:59,062+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:44:59,069+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=1381507}} will be skipped during data restore
+2017-04-14 13:44:59,071+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} 1 operations were processed, current LSN is LSN{segment=0, position=1381507} last LSN is LSN{segment=0, position=1381560}
+2017-04-14 13:44:59,077+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=1381514}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=1381467}} will be skipped during data restore
+2017-04-14 13:44:59,078+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=1381554}} will be skipped during data restore
+2017-04-14 13:44:59,082+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=component}} Storage data recover was completed
+2017-04-14 13:45:04,503+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Storage 'audit' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:45:04,507+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Looking for last checkpoint...
+2017-04-14 13:45:04,508+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Found FUZZY checkpoint.
+2017-04-14 13:45:04,511+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:45:04,514+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=541289}} will be skipped during data restore
+2017-04-14 13:45:04,519+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} 1 operations were processed, current LSN is LSN{segment=0, position=541289} last LSN is LSN{segment=0, position=541342}
+2017-04-14 13:45:04,522+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=541296}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=541249}} will be skipped during data restore
+2017-04-14 13:45:04,529+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=541336}} will be skipped during data restore
+2017-04-14 13:45:04,535+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=audit}} Storage data recover was completed
+2017-04-14 13:45:05,643+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Storage 'security' was not closed properly. Will try to recover from write ahead log
+2017-04-14 13:45:05,644+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Looking for last checkpoint...
+2017-04-14 13:45:05,652+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Found FUZZY checkpoint.
+2017-04-14 13:45:05,656+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Data restore procedure from FUZZY checkpoint is started.
+2017-04-14 13:45:05,659+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=1310619}} will be skipped during data restore
+2017-04-14 13:45:05,662+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} 1 operations were processed, current LSN is LSN{segment=0, position=1310619} last LSN is LSN{segment=0, position=1310672}
+2017-04-14 13:45:05,668+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Record OFuzzyCheckpointStartRecord{lsn=LSN{segment=0, position=1310626}} com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointStartRecord{lsn=null, previousCheckpoint=LSN{segment=0, position=1310579}} will be skipped during data restore
+2017-04-14 13:45:05,670+0800 WARN  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Record com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OFuzzyCheckpointEndRecord{lsn=LSN{segment=0, position=1310666}} will be skipped during data restore
+2017-04-14 13:45:05,674+0800 INFO  [FelixStartLevel] *SYSTEM com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage - $ANSI{green {db=security}} Storage data recover was completed
+2017-04-14 13:45:06,887+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start EVENTS
+2017-04-14 13:45:07,078+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.QuartzSchedulerSPI - Thread-pool size: 20
+2017-04-14 13:45:07,374+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start SECURITY
+2017-04-14 13:45:07,430+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.security.internal.RealmManagerImpl - Using default configuration: RealmConfiguration{realmNames=[NexusAuthenticatingRealm, NexusAuthorizingRealm]}
+2017-04-14 13:45:07,444+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.cache.internal.RuntimeCacheManagerProvider - Cache-provider: ehcache
+2017-04-14 13:45:07,457+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.cache.internal.ehcache.EhCacheManagerProvider - Creating cache-manager with configuration: file:/E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml
+2017-04-14 13:45:07,467+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.xml.XmlConfiguration - Loading Ehcache XML configuration from /E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml.
+2017-04-14 13:45:08,023+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache NexusAuthenticatingRealm.authenticationCache will be supplemented by template nexus-default
+2017-04-14 13:45:08,162+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'NexusAuthenticatingRealm.authenticationCache' created in EhcacheManager.
+2017-04-14 13:45:08,175+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=NexusAuthenticatingRealm.authenticationCache
+2017-04-14 13:45:08,182+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=NexusAuthenticatingRealm.authenticationCache
+2017-04-14 13:45:08,191+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache NexusAuthorizingRealm.authorizationCache will be supplemented by template nexus-default
+2017-04-14 13:45:08,201+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'NexusAuthorizingRealm.authorizationCache' created in EhcacheManager.
+2017-04-14 13:45:08,206+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=NexusAuthorizingRealm.authorizationCache
+2017-04-14 13:45:08,211+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=NexusAuthorizingRealm.authorizationCache
+2017-04-14 13:45:08,221+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start SERVICES
+2017-04-14 13:45:08,340+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.orient.JobStoreImpl - Instance name: nexus; ID: 7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0
+2017-04-14 13:45:08,341+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.orient.JobStoreImpl - Initialized
+2017-04-14 13:45:08,426+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.QuartzSchedulerSPI - Quartz Scheduler v2.2.2
+2017-04-14 13:45:09,353+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] : state=WAITING
+2017-04-14 13:45:09,467+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.blobstore.file.internal.BlobStoreMetricsStoreImpl - Loading blob store metrics file E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\nexus-data\blobs\default\7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0-metrics.properties
+2017-04-14 13:45:10,010+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.internal.httpclient.HttpClientManagerImpl - Using default configuration: HttpClientConfiguration{connection=null, proxy=null, authentication=null}
+2017-04-14 13:45:10,041+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Remote connection status of repository nuget.org-proxy set to Ready to Connect.
+2017-04-14 13:45:10,050+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache nuget.org-proxy#odata-query-cache will be supplemented by template nexus-default
+2017-04-14 13:45:10,059+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'nuget.org-proxy#odata-query-cache' created in EhcacheManager.
+2017-04-14 13:45:10,061+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=nuget.org-proxy#odata-query-cache
+2017-04-14 13:45:10,063+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=nuget.org-proxy#odata-query-cache
+2017-04-14 13:45:10,114+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Remote connection status of repository maven-central set to Ready to Connect.
+2017-04-14 13:45:10,116+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache maven-central#negative-cache will be supplemented by template nexus-default
+2017-04-14 13:45:10,143+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'maven-central#negative-cache' created in EhcacheManager.
+2017-04-14 13:45:10,150+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=maven-central#negative-cache
+2017-04-14 13:45:10,154+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=maven-central#negative-cache
+2017-04-14 13:45:10,190+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Remote connection status of repository nuget-group set to Ready to Connect.
+2017-04-14 13:45:10,194+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache nuget-group#odata-query-cache will be supplemented by template nexus-default
+2017-04-14 13:45:10,206+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'nuget-group#odata-query-cache' created in EhcacheManager.
+2017-04-14 13:45:10,212+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=nuget-group#odata-query-cache
+2017-04-14 13:45:10,214+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=nuget-group#odata-query-cache
+2017-04-14 13:45:10,295+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Remote connection status of repository oschina set to Ready to Connect.
+2017-04-14 13:45:10,354+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.ConfigurationMerger - Configuration of cache oschina#negative-cache will be supplemented by template nexus-default
+2017-04-14 13:45:10,363+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.core.EhcacheManager - Cache 'oschina#negative-cache' created in EhcacheManager.
+2017-04-14 13:45:10,399+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=oschina#negative-cache
+2017-04-14 13:45:10,400+0800 INFO  [FelixStartLevel] *SYSTEM org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=oschina#negative-cache
+2017-04-14 13:45:10,417+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.elasticsearch.internal.NodeProvider - Creating node with config: E:\yeminproject\Repositories\github_repositories\maven_service\nexus-3.3.0-01-win64\nexus-3.3.0-01\etc\fabric\elasticsearch.yml
+2017-04-14 13:45:11,209+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.node - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] version[2.4.3], pid[11356], build[d38a34e/2016-12-07T16:28:56Z]
+2017-04-14 13:45:11,209+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.node - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] initializing ...
+2017-04-14 13:45:11,223+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.plugins - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] modules [], plugins [content-auth-plugin], sites []
+2017-04-14 13:45:11,399+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.env - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] using [1] data paths, mounts [[ÎÄµµ (E:)]], net usable_space [65.2gb], net total_space [132gb], spins? [unknown], types [NTFS]
+2017-04-14 13:45:11,405+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.env - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] heap size [1.1gb], compressed ordinary object pointers [true]
+2017-04-14 13:45:16,222+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.node - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] initialized
+2017-04-14 13:45:16,223+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.node - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] starting ...
+2017-04-14 13:45:16,234+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.transport - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] publish_address {local[1]}, bound_addresses {local[1]}
+2017-04-14 13:45:16,253+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.discovery - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] nexus/D8egWuy5SLKfhMi-OiEdrQ
+2017-04-14 13:45:16,285+0800 INFO  [elasticsearch[7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0][clusterService#updateTask][T#1]] *SYSTEM org.elasticsearch.cluster.service - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] new_master {7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0}{D8egWuy5SLKfhMi-OiEdrQ}{local}{local[1]}{local=true, master=true}, reason: local-disco-initial_connect(master)
+2017-04-14 13:45:16,292+0800 INFO  [FelixStartLevel] *SYSTEM org.elasticsearch.node - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] started
+2017-04-14 13:45:17,618+0800 INFO  [elasticsearch[7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0][clusterService#updateTask][T#1]] *SYSTEM org.elasticsearch.gateway - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] recovered [7] indices into cluster_state
+2017-04-14 13:45:21,644+0800 INFO  [elasticsearch[7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0][clusterService#updateTask][T#1]] *SYSTEM org.elasticsearch.cluster.routing.allocation - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[3d781e8165513bfe7db3d7eaab3991b9ebec763b][0]] ...]).
+2017-04-14 13:45:21,798+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start CAPABILITIES
+2017-04-14 13:45:22,143+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.extender.NexusLifecycleManager - Start TASKS
+2017-04-14 13:45:22,226+0800 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.quartz.internal.QuartzSchedulerSPI - Scheduler put into ready mode
+2017-04-14 13:45:22,604+0800 INFO  [quartz-1-thread-1] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2017-04-14 13:45:22,696+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.osgi.BootstrapListener - Initialized
+2017-04-14 13:45:22,728+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.rapture.internal.RaptureWebResourceBundle - UI plugin descriptors:
+2017-04-14 13:45:22,730+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.rapture.internal.RaptureWebResourceBundle -   nexus-rapture
+2017-04-14 13:45:22,734+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.rapture.internal.RaptureWebResourceBundle -   nexus-proximanova-plugin
+2017-04-14 13:45:22,737+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.rapture.internal.RaptureWebResourceBundle -   nexus-coreui-plugin
+2017-04-14 13:45:22,740+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.rapture.internal.RaptureWebResourceBundle -   nexus-proui-plugin
+2017-04-14 13:45:22,758+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.internal.webresources.WebResourceServlet - Max-age: 30 days (2592000 seconds)
+2017-04-14 13:45:22,811+0800 INFO  [jetty-main-1] *SYSTEM com.softwarementors.extjs.djn.servlet.DirectJNgineServlet - Servlet GLOBAL configuration: debug=false, providersUrl=service/extdirect, minify=false, batchRequestsMultithreadingEnabled=true, batchRequestsMinThreadsPoolSize=16, batchRequestsMaxThreadsPoolSize=80, batchRequestsMaxThreadsPerRequest=8, batchRequestsMaxThreadKeepAliveSeconds=60, gsonBuilderConfiguratorClass=org.sonatype.nexus.extdirect.internal.ExtDirectGsonBuilderConfigurator, dispatcherClass=com.softwarementors.extjs.djn.servlet.ssm.SsmDispatcher, jsonRequestProcessorThreadClass=org.sonatype.nexus.extdirect.internal.ExtDirectJsonRequestProcessorThread, contextPath=--not specified: calculated via Javascript--, createSourceFiles=true
+2017-04-14 13:45:22,824+0800 INFO  [jetty-main-1] *SYSTEM com.softwarementors.extjs.djn.servlet.DirectJNgineServlet - Servlet GLOBAL configuration: registryConfiguratorClass=
+2017-04-14 13:45:22,848+0800 INFO  [quartz-1-thread-1] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2017-04-14 13:45:22,888+0800 INFO  [jetty-main-1] *SYSTEM com.softwarementors.extjs.djn.jscodegen.CodeFileGenerator - Creating source files for APIs...
+2017-04-14 13:45:23,088+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.siesta.SiestaServlet - JAX-RS RuntimeDelegate: org.sonatype.nexus.siesta.internal.resteasy.SisuResteasyProviderFactory@39a62d8b
+2017-04-14 13:45:23,394+0800 INFO  [jetty-main-1] *SYSTEM org.jboss.resteasy.plugins.validation.i18n - RESTEASY008550: Unable to find CDI supporting ValidatorFactory. Using default ValidatorFactory
+2017-04-14 13:45:23,466+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.siesta.SiestaServlet - Initialized
+2017-04-14 13:45:23,473+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.repository.httpbridge.internal.ViewServlet - Initialized
+2017-04-14 13:45:23,528+0800 INFO  [jetty-main-1] *SYSTEM org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@4c7bbcc6{/,file:///E:/yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/public/,AVAILABLE}
+2017-04-14 13:45:23,676+0800 INFO  [jetty-main-1] *SYSTEM org.eclipse.jetty.server.ServerConnector - Started ServerConnector@74dde7b1{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2017-04-14 13:45:23,681+0800 INFO  [jetty-main-1] *SYSTEM org.eclipse.jetty.server.Server - Started @82179ms
+2017-04-14 13:45:23,683+0800 INFO  [jetty-main-1] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - 
+-------------------------------------------------
+
+Started Sonatype Nexus OSS 3.3.0-01
+
+-------------------------------------------------
+2017-04-14 13:47:30,707+0800 INFO  [qtp1404424529-52] *UNKNOWN org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+2017-04-14 13:47:30,722+0800 INFO  [qtp1404424529-52] *UNKNOWN org.sonatype.nexus.internal.security.anonymous.AnonymousManagerImpl - Using default configuration: AnonymousConfiguration{enabled=true, userId='anonymous', realmName='NexusAuthorizingRealm'}
+2017-04-14 13:47:31,423+0800 INFO  [qtp1404424529-52] *UNKNOWN org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Repository status for maven-central changed from READY to AVAILABLE - reason n/a for n/a
+2017-04-14 13:47:31,930+0800 INFO  [elasticsearch[7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0][clusterService#updateTask][T#1]] *SYSTEM org.elasticsearch.cluster.metadata - [7BD966D2-72FA0307-10C36CEF-E3C7F086-226042B0] [73ae44bc066b6a7a33b4435641d8229b9b66495a] update_mapping [component]
+2017-04-14 13:48:44,597+0800 INFO  [qtp1404424529-51] *UNKNOWN org.ehcache.jsr107.ConfigurationMerger - Configuration of cache shiro-activeSessionCache will be supplemented by template nexus-default
+2017-04-14 13:48:44,600+0800 INFO  [qtp1404424529-51] *UNKNOWN org.ehcache.core.EhcacheManager - Cache 'shiro-activeSessionCache' created in EhcacheManager.
+2017-04-14 13:48:44,602+0800 INFO  [qtp1404424529-51] *UNKNOWN org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheConfiguration,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=shiro-activeSessionCache
+2017-04-14 13:48:44,603+0800 INFO  [qtp1404424529-51] *UNKNOWN org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./E./yeminproject/Repositories/github_repositories/maven_service/nexus-3.3.0-01-win64/nexus-3.3.0-01/etc/fabric/ehcache.xml,Cache=shiro-activeSessionCache
+2017-04-14 13:48:49,036+0800 INFO  [qtp1404424529-54] *UNKNOWN com.sonatype.nexus.analytics.internal.EventSubmitterImpl - Service URL: https://analytics.sonatype.com
+2017-04-14 13:50:00,037+0800 INFO  [quartz-1-thread-2] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2017-04-14 13:50:00,055+0800 INFO  [quartz-1-thread-2] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2017-04-14 13:52:16,460+0800 INFO  [qtp1404424529-51] *UNKNOWN org.sonatype.nexus.repository.httpclient.internal.HttpClientFacetImpl - Repository status for oschina changed from READY to AVAILABLE - reason n/a for n/a
+2017-04-14 14:00:00,019+0800 INFO  [quartz-1-thread-3] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2017-04-14 14:00:00,027+0800 INFO  [quartz-1-thread-3] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2017-04-14 14:07:33,581+0800 WARN  [qtp1404424529-51] *UNKNOWN com.google.common.io.Closeables - IOException thrown while closing Closeable.
+org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 2758405; received: 1701067
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:178) [na:na]
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:198) [na:na]
+	at org.apache.http.impl.io.ContentLengthInputStream.close(ContentLengthInputStream.java:101) [na:na]
+	at org.apache.http.impl.execchain.ResponseEntityProxy.streamClosed(ResponseEntityProxy.java:140) [na:na]
+	at org.apache.http.conn.EofSensorInputStream.checkClose(EofSensorInputStream.java:228) [httpcore:0.0.0]
+	at org.apache.http.conn.EofSensorInputStream.close(EofSensorInputStream.java:174) [httpcore:0.0.0]
+	at org.apache.http.util.EntityUtils.consume(EntityUtils.java:88) [httpcore:0.0.0]
+	at org.sonatype.nexus.repository.view.payloads.HttpEntityPayload.close(HttpEntityPayload.java:68) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Content.close(Content.java:102) [org.sonatype.nexus.repository:3.3.0.01]
+	at com.google.common.io.Closeables.close(Closeables.java:76) [com.google.guava:21.0.0]
+	at org.sonatype.nexus.repository.proxy.ProxyFacetSupport.get(ProxyFacetSupport.java:195) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.proxy.ProxyHandler.handle(ProxyHandler.java:49) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.storage.UnitOfWorkHandler.handle(UnitOfWorkHandler.java:39) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.ContentHeadersHandler.handle(ContentHeadersHandler.java:44) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.maven.internal.VersionPolicyHandler.handle(VersionPolicyHandler.java:60) [org.sonatype.nexus.plugins.nexus-repository-maven:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.http.PartialFetchHandler.handle(PartialFetchHandler.java:55) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.cache.NegativeCacheHandler.handle(NegativeCacheHandler.java:42) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.ConditionalRequestHandler.handle(ConditionalRequestHandler.java:72) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountContributedHandler.handle(AssetDownloadCountContributedHandler.java:47) [com.sonatype.nexus.plugins.nexus-healthcheck-base:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.HandlerContributor.handle(HandlerContributor.java:67) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.ExceptionHandler.handle(ExceptionHandler.java:43) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.security.SecurityHandler.handle(SecurityHandler.java:52) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.TimingHandler.handle(TimingHandler.java:46) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.start(Context.java:114) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Router.dispatch(Router.java:63) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:52) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.group.GroupHandler.getFirst(GroupHandler.java:118) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.group.GroupHandler.doGet(GroupHandler.java:95) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.group.GroupHandler.handle(GroupHandler.java:79) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.http.PartialFetchHandler.handle(PartialFetchHandler.java:55) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.ConditionalRequestHandler.handle(ConditionalRequestHandler.java:72) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountContributedHandler.handle(AssetDownloadCountContributedHandler.java:47) [com.sonatype.nexus.plugins.nexus-healthcheck-base:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.HandlerContributor.handle(HandlerContributor.java:67) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.ExceptionHandler.handle(ExceptionHandler.java:43) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.security.SecurityHandler.handle(SecurityHandler.java:52) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.handlers.TimingHandler.handle(TimingHandler.java:46) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Context.start(Context.java:114) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.Router.dispatch(Router.java:63) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:52) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:43) [org.sonatype.nexus.repository:3.3.0.01]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.dispatchAndSend(ViewServlet.java:198) [org.sonatype.nexus.plugins.nexus-repository-httpbridge:3.3.0.01]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.doService(ViewServlet.java:160) [org.sonatype.nexus.plugins.nexus-repository-httpbridge:3.3.0.01]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.service(ViewServlet.java:117) [org.sonatype.nexus.plugins.nexus-repository-httpbridge:3.3.0.01]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api:3.1.0]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.DynamicServletPipeline.service(DynamicServletPipeline.java:71) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [com.google.inject:4.1.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [org.apache.shiro.web:1.3.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [org.apache.shiro.web:1.3.2]
+	at org.sonatype.nexus.security.SecurityFilter.executeChain(SecurityFilter.java:85) [org.sonatype.nexus.security:3.3.0.01]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [org.apache.shiro.web:1.3.2]
+	at org.sonatype.nexus.security.SecurityFilter.doFilterInternal(SecurityFilter.java:101) [org.sonatype.nexus.security:3.3.0.01]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.repository.httpbridge.internal.ExhaustRequestFilter.doFilter(ExhaustRequestFilter.java:71) [org.sonatype.nexus.plugins.nexus-repository-httpbridge:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.sonatype.nexus.licensing.internal.LicensingRedirectFilter.doFilter(LicensingRedirectFilter.java:112) [com.sonatype.nexus.plugins.nexus-licensing-plugin:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.codahale.metrics.servlet.AbstractInstrumentedFilter.doFilter(AbstractInstrumentedFilter.java:97) [com.codahale.metrics.servlet:3.0.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:68) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.EnvironmentFilter.doFilter(EnvironmentFilter.java:102) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.HeaderPatternFilter.doFilter(HeaderPatternFilter.java:98) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.DynamicFilterPipeline.dispatch(DynamicFilterPipeline.java:104) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.bootstrap.osgi.DelegatingFilter.doFilter(DelegatingFilter.java:73) [org.sonatype.nexus.bootstrap:3.3.0.01]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [org.eclipse.jetty.security:9.3.7.v20160115]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1158) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1090) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [com.codahale.metrics.jetty9:3.0.2]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:109) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_102]
+2017-04-14 14:07:33,600+0800 WARN  [qtp1404424529-51] *UNKNOWN org.sonatype.nexus.repository.httpbridge.internal.ViewServlet - Failure servicing: HEAD /repository/maven-public/net/bytebuddy/byte-buddy/1.6.6/byte-buddy-1.6.6.jar
+org.sonatype.nexus.blobstore.api.BlobStoreException: BlobId: tmp$018ab2db-f0b7-4173-8db1-b02e0a17d050, java.net.SocketTimeoutException: Read timed out
+	at org.sonatype.nexus.blobstore.file.internal.FileBlobStore.create(FileBlobStore.java:340) [na:na]
+	at org.sonatype.nexus.blobstore.file.internal.FileBlobStore.create(FileBlobStore.java:274) [na:na]
+	at org.sonatype.nexus.common.stateguard.MethodInvocationAction.run(MethodInvocationAction.java:39) [na:na]
+	at org.sonatype.nexus.common.stateguard.StateGuard$GuardImpl.run(StateGuard.java:270) [na:na]
+	at org.sonatype.nexus.common.stateguard.GuardedInterceptor.invoke(GuardedInterceptor.java:53) [na:na]
+	at org.sonatype.nexus.repository.storage.StorageFacetImpl.createTempBlob(StorageFacetImpl.java:213) [na:na]
+	at org.sonatype.nexus.repository.storage.StorageFacetImpl.createTempBlob(StorageFacetImpl.java:225) [na:na]
+	at org.sonatype.nexus.repository.maven.internal.MavenFacetImpl.put(MavenFacetImpl.java:199) [na:na]
+	at org.sonatype.nexus.repository.maven.internal.proxy.MavenProxyFacet.store(MavenProxyFacet.java:88) [na:na]
+	at org.sonatype.nexus.repository.proxy.ProxyFacetSupport.get(ProxyFacetSupport.java:173) [na:na]
+	at org.sonatype.nexus.repository.proxy.ProxyHandler.handle(ProxyHandler.java:49) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.storage.UnitOfWorkHandler.handle(UnitOfWorkHandler.java:39) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.ContentHeadersHandler.handle(ContentHeadersHandler.java:44) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.maven.internal.VersionPolicyHandler.handle(VersionPolicyHandler.java:60) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.http.PartialFetchHandler.handle(PartialFetchHandler.java:55) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.cache.NegativeCacheHandler.handle(NegativeCacheHandler.java:42) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.ConditionalRequestHandler.handle(ConditionalRequestHandler.java:72) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountContributedHandler.handle(AssetDownloadCountContributedHandler.java:47) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.HandlerContributor.handle(HandlerContributor.java:67) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.ExceptionHandler.handle(ExceptionHandler.java:43) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.security.SecurityHandler.handle(SecurityHandler.java:52) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.TimingHandler.handle(TimingHandler.java:46) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.Context.start(Context.java:114) [na:na]
+	at org.sonatype.nexus.repository.view.Router.dispatch(Router.java:63) [na:na]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:52) [na:na]
+	at org.sonatype.nexus.repository.group.GroupHandler.getFirst(GroupHandler.java:118) [na:na]
+	at org.sonatype.nexus.repository.group.GroupHandler.doGet(GroupHandler.java:95) [na:na]
+	at org.sonatype.nexus.repository.group.GroupHandler.handle(GroupHandler.java:79) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.http.PartialFetchHandler.handle(PartialFetchHandler.java:55) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.ConditionalRequestHandler.handle(ConditionalRequestHandler.java:72) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at com.sonatype.nexus.plugins.healthcheck.downloads.AssetDownloadCountContributedHandler.handle(AssetDownloadCountContributedHandler.java:47) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.HandlerContributor.handle(HandlerContributor.java:67) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.ExceptionHandler.handle(ExceptionHandler.java:43) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.security.SecurityHandler.handle(SecurityHandler.java:52) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.handlers.TimingHandler.handle(TimingHandler.java:46) [na:na]
+	at org.sonatype.nexus.repository.view.Context.proceed(Context.java:80) [na:na]
+	at org.sonatype.nexus.repository.view.Context.start(Context.java:114) [na:na]
+	at org.sonatype.nexus.repository.view.Router.dispatch(Router.java:63) [na:na]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:52) [na:na]
+	at org.sonatype.nexus.repository.view.ConfigurableViewFacet.dispatch(ConfigurableViewFacet.java:43) [na:na]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.dispatchAndSend(ViewServlet.java:198) [na:na]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.doService(ViewServlet.java:160) [na:na]
+	at org.sonatype.nexus.repository.httpbridge.internal.ViewServlet.service(ViewServlet.java:117) [na:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api:3.1.0]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.DynamicServletPipeline.service(DynamicServletPipeline.java:71) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [com.google.inject:4.1.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [org.apache.shiro.web:1.3.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [org.apache.shiro.web:1.3.2]
+	at org.sonatype.nexus.security.SecurityFilter.executeChain(SecurityFilter.java:85) [org.sonatype.nexus.security:3.3.0.01]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [org.apache.shiro.web:1.3.2]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [org.apache.shiro.core:1.3.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [org.apache.shiro.web:1.3.2]
+	at org.sonatype.nexus.security.SecurityFilter.doFilterInternal(SecurityFilter.java:101) [org.sonatype.nexus.security:3.3.0.01]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [org.apache.shiro.web:1.3.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.repository.httpbridge.internal.ExhaustRequestFilter.doFilter(ExhaustRequestFilter.java:71) [org.sonatype.nexus.plugins.nexus-repository-httpbridge:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.sonatype.nexus.licensing.internal.LicensingRedirectFilter.doFilter(LicensingRedirectFilter.java:112) [com.sonatype.nexus.plugins.nexus-licensing-plugin:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.codahale.metrics.servlet.AbstractInstrumentedFilter.doFilter(AbstractInstrumentedFilter.java:97) [com.codahale.metrics.servlet:3.0.2]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:68) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.EnvironmentFilter.doFilter(EnvironmentFilter.java:102) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.internal.web.HeaderPatternFilter.doFilter(HeaderPatternFilter.java:98) [org.sonatype.nexus.base:3.3.0.01]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.DynamicFilterPipeline.dispatch(DynamicFilterPipeline.java:104) [com.google.inject:4.1.0]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [com.google.inject:4.1.0]
+	at org.sonatype.nexus.bootstrap.osgi.DelegatingFilter.doFilter(DelegatingFilter.java:73) [org.sonatype.nexus.bootstrap:3.3.0.01]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [org.eclipse.jetty.security:9.3.7.v20160115]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1158) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [org.eclipse.jetty.servlet:9.3.7.v20160115]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1090) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [com.codahale.metrics.jetty9:3.0.2]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:109) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [org.eclipse.jetty.server:9.3.7.v20160115]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [org.eclipse.jetty.io:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [org.eclipse.jetty.util:9.3.7.v20160115]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_102]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) [na:1.8.0_102]
+	at java.net.SocketInputStream.socketRead(Unknown Source) [na:1.8.0_102]
+	at java.net.SocketInputStream.read(Unknown Source) [na:1.8.0_102]
+	at java.net.SocketInputStream.read(Unknown Source) [na:1.8.0_102]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) [na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:198) [na:na]
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:176) [na:na]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137) [na:na]
+	at org.sonatype.nexus.common.hash.MultiHashingInputStream.read(MultiHashingInputStream.java:66) [na:na]
+	at com.google.common.io.CountingInputStream.read(CountingInputStream.java:63) [na:na]
+	at java.security.DigestInputStream.read(Unknown Source) [na:1.8.0_102]
+	at java.io.FilterInputStream.read(Unknown Source) [na:1.8.0_102]
+	at java.io.FilterInputStream.read(Unknown Source) [na:1.8.0_102]
+	at com.google.common.io.ByteStreams.copy(ByteStreams.java:106) [na:na]
+	at org.sonatype.nexus.blobstore.file.internal.SimpleFileOperations.create(SimpleFileOperations.java:58) [na:na]
+	at org.sonatype.nexus.blobstore.file.internal.FileBlobStore.lambda$0(FileBlobStore.java:274) [na:na]
+	at org.sonatype.nexus.blobstore.file.internal.FileBlobStore.create(FileBlobStore.java:318) [na:na]
+	... 132 common frames omitted
+2017-04-14 14:10:00,018+0800 INFO  [quartz-1-thread-4] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2017-04-14 14:10:00,031+0800 INFO  [quartz-1-thread-4] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2017-04-14 14:20:00,012+0800 INFO  [quartz-1-thread-5] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2017-04-14 14:20:00,021+0800 INFO  [quartz-1-thread-5] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
